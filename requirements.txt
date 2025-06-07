@@ -1,0 +1,15 @@
+streamlit
+matplotlib
+scikit-learn
+pypdf
+unstructured
+pdfminer.six
+pi_heif
+unstructured-inference
+pdf2image
+langchain-community
+google-generativeai
+pdfplumber
+unstructured-pytesseract
+sentence-transformers
+faiss-cpu
