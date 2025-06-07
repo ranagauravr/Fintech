@@ -1,43 +1,9 @@
-# # ------------------- Automatic Installer for Required Packages -------------------
-# import subprocess
-# import sys
-
-# def install(package):
-#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# packages = {
-#     "streamlit": "streamlit",
-#     "langchain": "langchain==0.1.14",
-#     "google.generativeai": "google-generativeai==0.3.2",
-#     "tiktoken": "tiktoken",
-#     "unstructured": "unstructured",
-#     "pdf2image": "pdf2image",
-#     "matplotlib": "matplotlib",
-#     "plotly": "plotly",
-#     "sklearn": "scikit-learn",
-#     "pdfplumber": "pdfplumber",
-#     "fitz": "PyMuPDF",
-#     "openai": "openai",
-#     "pandas": "pandas",
-#     "tqdm": "tqdm",
-#     "seaborn": "seaborn",
-#     "sentence_transformers": "sentence-transformers",
-#     "unstructured_inference": "unstructured-inference"
-# }
-
-# for module_name, pip_name in packages.items():
-#     try:
-#         __import__(module_name)
-#     except ImportError:
-#         install(pip_name)
-
-# # --------------------- Imports (After Ensuring Installation) ---------------------
 import streamlit as st
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
 from unstructured.partition.pdf import partition_pdf
 import pdfplumber
 from langchain.text_splitter import RecursiveCharacterTextSplitter
